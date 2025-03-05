@@ -1,0 +1,54 @@
+<svg width="280" height="280" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- 外圈圆环 -->
+  <circle cx="200" cy="200" r="190" fill="none" stroke="#CD0000" stroke-width="4"/>
+
+  <!-- 十天干 -->
+  <g id="heavenly_stems">
+    <g transform="translate(200, 200)">
+      <text x="0" y="-160" text-anchor="middle" fill="#CD0000" font-size="24px" font-family="SimSun">甲</text>
+      <text x="160" y="0" text-anchor="middle" fill="#CD0000" font-size="24px" font-family="SimSun">乙</text>
+      <text x="0" y="160" text-anchor="middle" fill="#CD0000" font-size="24px" font-family="SimSun">丙</text>
+      <text x="-160" y="0" text-anchor="middle" fill="#CD0000" font-size="24px" font-family="SimSun">丁</text>
+      <text x="113" y="-113" text-anchor="middle" fill="#CD0000" font-size="24px" font-family="SimSun">戊</text>
+      <text x="113" y="113" text-anchor="middle" fill="#CD0000" font-size="24px" font-family="SimSun">己</text>
+      <text x="-113" y="113" text-anchor="middle" fill="#CD0000" font-size="24px" font-family="SimSun">庚</text>
+      <text x="-113" y="-113" text-anchor="middle" fill="#CD0000" font-size="24px" font-family="SimSun">辛</text>
+      <text x="80" y="-138" text-anchor="middle" fill="#CD0000" font-size="24px" font-family="SimSun">壬</text>
+      <text x="-80" y="138" text-anchor="middle" fill="#CD0000" font-size="24px" font-family="SimSun">癸</text>
+    </g>
+  </g>
+
+  <!-- 十二地支 -->
+  <g id="earthly_branches">
+    <g transform="translate(200, 200)">
+      <circle cx="0" cy="0" r="120" fill="none" stroke="#8B0000" stroke-width="2"/>
+      <text x="0" y="-100" text-anchor="middle" fill="#8B0000" font-size="20px" font-family="SimSun">子</text>
+      <text x="87" y="-50" text-anchor="middle" fill="#8B0000" font-size="20px" font-family="SimSun">丑</text>
+      <text x="87" y="50" text-anchor="middle" fill="#8B0000" font-size="20px" font-family="SimSun">寅</text>
+      <text x="0" y="100" text-anchor="middle" fill="#8B0000" font-size="20px" font-family="SimSun">卯</text>
+      <text x="-87" y="50" text-anchor="middle" fill="#8B0000" font-size="20px" font-family="SimSun">辰</text>
+      <text x="-87" y="-50" text-anchor="middle" fill="#8B0000" font-size="20px" font-family="SimSun">巳</text>
+      <text x="50" y="-87" text-anchor="middle" fill="#8B0000" font-size="20px" font-family="SimSun">午</text>
+      <text x="100" y="0" text-anchor="middle" fill="#8B0000" font-size="20px" font-family="SimSun">未</text>
+      <text x="50" y="87" text-anchor="middle" fill="#8B0000" font-size="20px" font-family="SimSun">申</text>
+      <text x="-50" y="87" text-anchor="middle" fill="#8B0000" font-size="20px" font-family="SimSun">酉</text>
+      <text x="-100" y="0" text-anchor="middle" fill="#8B0000" font-size="20px" font-family="SimSun">戌</text>
+      <text x="-50" y="-87" text-anchor="middle" fill="#8B0000" font-size="20px" font-family="SimSun">亥</text>
+    </g>
+  </g>
+
+  <style>
+    @keyframes rotate {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+    #heavenly_stems {
+      animation: rotate 60s linear infinite;
+      transform-origin: 50% 50%;
+    }
+    #earthly_branches {
+      animation: rotate 120s linear infinite reverse;
+      transform-origin: 50% 50%;
+    }
+  </style>
+</svg>
